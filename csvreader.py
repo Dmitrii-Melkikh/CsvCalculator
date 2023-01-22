@@ -11,7 +11,7 @@ def splitCell(s: str):
             break
     return s[:index], s[index:]
 
-print(sys.argv[0])
+
 try:
     df = pd.read_csv(sys.argv[1])
 except():
