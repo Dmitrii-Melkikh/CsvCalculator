@@ -39,8 +39,8 @@ for rowIndex, row in df.iterrows():
                     result = eval(result)
 
                     df.at[rowIndex, columnIndex] = result
-                except(ZeroDivisionError):
-                    print('В строке \'=' + ''.join(cells) + '\' попытка деления на ноль')
+                except():
+                    print('В строке \'=' + ''.join(cells) + '\' неверно определена арифметическая операция')
                     sys.exit(0)
             except():
                 print('В таблице присутствуют неправильные адреса ячеек')
